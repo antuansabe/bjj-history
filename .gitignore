@@ -1,0 +1,45 @@
+# Ignore configuration files that may contain sensitive information.
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+/web/sites/*/files
+/web/sites/*/private
+
+# Ignore SimpleTest multi-site environment.
+/web/sites/simpletest
+
+# Composer dependencies
+/vendor/
+
+# DDEV
+/.ddev/.homeadditions
+/.ddev/.global_commands
+/.ddev/commands/web/.gitkeep
+/.ddev/commands/db/.gitkeep
+/.ddev/commands/host/.gitkeep
+/.ddev/.ddev-docker-compose-base.yaml
+/.ddev/.ddev-docker-compose-full.yaml
+/.ddev/db_snapshots
+/.ddev/import-db
+
+# Ignore sensitive files
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
+
+# Ignore backup files
+*.sql
+*.sql.gz
+backup-*.sql
+backup-*.sql.gz
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
